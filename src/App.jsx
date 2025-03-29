@@ -7,8 +7,6 @@ function App() {
   //Past pokemonInfo is saved in the state variable pokemonInfo
   //let previousPokemon = pokemonInfo;
 
-
-  //let [attributesList, setattributesList] = useState([]);
   const api = "https://pokeapi.co/api/v2/pokemon/";
   const pokemonCount = 1025;
   
@@ -24,39 +22,66 @@ function App() {
     let sprite = data.sprites.front_default;
     let spriteShiny = data.sprites.front_shiny;
     let weight = data.weight;
-
+    //let versions = data.versions;
+   // versions = Object.values(versions); // Convert the object to an array
+    // Filter out any null values from the versions array
     let generation = "";
-    /*
-    if(data.versions[0][0][0] != null){
-      generation == "Generation 1";
-    }
-    else if(data.versions[1][0][0] != null){
-      generation == "Generation 2";
-    }
-    else if(data.versions[2][0][0] != null){
-      generation == "Generation 3";
-    }
-    else if(data.versions[3][0][0] != null){
-      generation == "Generation 4";
-    }
-    else if(data.versions[4][0][0][0] != null){
-      generation == "Generation 5";
-    }
-    else if(data.versions[5][0][0] != null){
-      generation == "Generation 6";
-    }
-    else if(data.versions[6][0][0] != null){
-      generation == "Generation 7";
-    }
-    else if(data.versions[7][0][0] != null){
-      generation == "Generation 8";
+    //(data.versions.generation-i.red-blue.front_default).toString();
+    if (!data.game_indices || data.game_indices.length === 0) {
+      //manually assign generation if no game indices are available
+        if(data.id > 649){
+          if(data.id <= 721){
+            generation = "Generation VI";
+          }
+          else if(data.id <= 809){
+            generation = "Generation VII";
+          }
+          else if(data.id <= 905){
+            generation = "Generation VIII";
+          }
+          else if(data.id <= 1025){
+            generation = "Generation IX";
+          }
+      }
     }
     else{
-      generation == "Generation 9";
-    }*/
-
-
-
+  switch(data.game_indices[0].version.name)
+  {
+    case 'red':
+    case 'blue':
+    case 'yellow':
+      generation = "Generation I";
+      break;
+    case 'gold':
+    case 'silver':
+    case 'crystal':
+      generation = "Generation II";
+      break;
+    case 'ruby':
+    case 'sapphire':
+    case 'emerald':
+    case 'firered':
+    case 'leafgreen':
+      generation = "Generation III";
+      break;
+    case 'diamond':
+    case 'pearl':
+    case 'platinum':
+    case 'heartgold':
+    case 'soulsilver':
+      generation = "Generation IV";
+      break;
+    case 'black':
+    case 'white':
+    case 'black-2':
+    case 'white-2':
+      generation = "Generation V";
+      break;
+    default:
+      generation = "unknown";
+  }
+    }
+    // Check if the pokemon is in the banlist
     let attributesList = [name, weight, generation];
     let bancheck = bannedattr => banlist.includes(bannedattr);
     if (attributesList.some(bancheck) || types.some(type => banlist.includes(type)) ||
