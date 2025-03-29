@@ -22,7 +22,7 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 - [x] Multiple types of attributes can be added to the ban list
-- [ ] Users can see a stored history of their previously viewed items from their session
+- [x] Users can see a stored history of their previously viewed items from their session
 
 The following **additional** features are implemented:
 
