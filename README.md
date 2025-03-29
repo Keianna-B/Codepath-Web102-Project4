@@ -32,7 +32,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://github.com/Keianna-B/Codepath-Web102-Project4/blob/master/Web%20102%20Project%204%20GIF%20-%20Made%20with%20Clipchamp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/Keianna-B/Codepath-Web102-Project4/blob/master/Web%20102%20Project%204%20added%20feature-%20Made%20with%20Clipchamp%20(1).gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
