@@ -3,7 +3,7 @@
 
 Submitted by: Keianna Brown
 
-This web app: Pokemon can be sorted by their generation, types, abilities, and weight. All of those attributes can be added and removed from the ban list. Every time a pokemon is search for it has a 20% chance to display the shiny sprite instead of the default sprite.
+This web app: Pokemon can be sorted by their generation, types, abilities, and weight. All of those attributes can be added and removed from the ban list. Every time a pokemon is searched for it has a 5% chance to display the shiny sprite instead of the default sprite.
 
 Time spent: 5 hours spent in total
 
@@ -26,7 +26,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [x] 20% chance the sprite of the randomly generated pokemon will be shiny
+* [x] 5% chance the sprite of the randomly generated pokemon will be shiny
 
 ## Video Walkthrough
 
