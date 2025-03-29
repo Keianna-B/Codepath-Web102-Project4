@@ -3,7 +3,7 @@
 
 Submitted by: Keianna Brown
 
-This web app: **insert description**
+This web app: Pokemon can be sorted by their generation, types, abilities, and weight. All of those attributes can be added and removed from the ban list. Every time a pokemon is search for it has a 20% chance to display the shiny sprite instead of the default sprite.
 
 Time spent: 5 hours spent in total
 
@@ -16,7 +16,7 @@ The following **required** functionality is completed:
 - [x] **API calls appear random to the user**
 - [x] **At least one image is displayed per API call**
 - [x] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
-  - [ ] To ensure an accurate grade, your recording **must** show that when clicked, an attribute in the ban list is immediately removed from the list of banned attributes
+  - [x] To ensure an accurate grade, your recording **must** show that when clicked, an attribute in the ban list is immediately removed from the list of banned attributes
 - [x] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
 
 The following **optional** features are implemented:
